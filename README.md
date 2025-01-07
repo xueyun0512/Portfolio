@@ -34,7 +34,7 @@ This is a reminder for me (and anyone if needed) to remember what did I do to pu
   Typically, the link should look like  https://username.github.io/repo_name/
 
 
-## Auteurs
+## Author
 * **Xueyun Olivia WENG** _alias_ [@xueyun0512](https://github.com/xueyun0512/)
 
 
