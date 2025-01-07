@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Olivia Xueyun WENG</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://www.tiktok.com/@yourcuisine" target="_blank">My Food Page</a></li>
+            <br>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Olivia Xueyun WENG</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="https://www.tiktok.com/@yourcuisine" target="_blank">My Food Page</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+
+<section id="profile">
+    <div class="section__pic-container">
+        <img 
+            src="../assets/profile.jpg" 
+            alt="test" 
+            style="width: 200px; height: 180px; object-fit: cover;" 
+        />
+    </div>
+
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Olivia Xueyun WENG</h1>
+        <p class="section__text__p2">Data Engineer</p>
+        <div class="btn-container">
+        <button
+            class="btn btn1"
+            onclick="window.open('../assets/CV_new.docx')"
+        >
+            Download CV
+        </button>
+        <button class="btn btn2" onclick="location.href='./#contact'">
+            Contact Info
+        </button>
+        </div>
+
+        <div id="socials-container">
+        <img
+            src="../assets/linkedin.jpg"
+            alt="My LinkedIn profile"
+            class="icon"
+            style="width: 100px; height: 50px; object-fit: cover;"
+            onclick="location.href='https://www.linkedin.com/in/wengxueyun31415/'"
+        />
+        <img
+            src="../assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            style="width: 60px; height: 50px; object-fit: cover;"
+            onclick="location.href='https://github.com/xueyun0512/'"
+        />
+        </div>
+    </div>
+    
+</section>
+
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="../assets/profile.jpg"
+        alt="Profile picture"
+        style="width: 200px; height: 180px; object-fit: cover;"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="../assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>1+ years <br />Data Engineer</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="../assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>French Classes Préparatoires CPGE<br />Engineering School (Masters Degree)</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+            Hello! I’m Olivia, a passionate <span style="font-size: 22px; font-weight: bold; color: red;">Machine Learning and Big Data Engineer</span> with a background and experiences in designing and optimizing data clusters to handle massive datasets, processing data and using them to make advanced analysis. With a unique blend of expertise in Hadoop-based metrics collection and machine learning, I specialize in building data-driven solutions that ensure the cluster being well-organised and easy to deploy for all users.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <img
+        src="../assets/bpce-it.jpg"
+        alt="BPCE-IT"
+        class="icon"
+        />
+        <h2 class="experience-sub-title">Data Engineer</h2>
+        <h3>Apprenticeship, 1 year, 2025</h3> <br>
+        <p>This apprenticeship aims to explore and engage with various aspects of the expansive data field, providing a deeper understanding of the work of a Data Engineer. Over the course of the year, three distinct projects have been completed: </p> <br>
+
+        <li><span style="font-weight: bold; color: navy;">Metrics Monitoring using the VictoriaMetrics solution:</span> Deploying a fully distributed and scalable service on a cluster, collecting metrics from multiple services in a Hadoop cluster, creating dashboards in Grafana, and setting up alerts.</li> <br>
+
+        <li><span style="font-weight: bold; color: navy;">Data Vizualisation with Apache Superset:</span> Exposing the connection audit data to our Big Data services in Hive tables, making the Superset service available for visualizing and querying the exposed data in order to ease other users to access relevant data quickly and efficiently</li> <br>
+        
+        <li><span style="font-weight: bold; color: navy;">Machine Learning Project:</span> implementing an AI model for an infrastructure use case, such as predicting failures from technical logs or optimizing Spark jobs. The model will be trained on data collected from relevant use cases and will primarily be used by the team to improve service quality and reduce time spent debugging logs.</li>
+
+      </div>
+
+      <div class="details-container">
+        <img
+        src="../assets/rte.png"
+        alt="RTE"
+        class="icon"
+        />
+        <h2 class="experience-sub-title">Data Scientist</h2>
+        <h3>Internship, 4 months, 2024 </h3> <br>
+        <p>During this internship at RTE, I had the opportunity to contribute to asset management while developing my skills in data analysis by carrying out the following assignments:</p> <br>
+        <li>Data extraction: I collected, analysed and processed data from the asset database
+        </li> <br>
+        <li>Writing Python scripts: I developed custom Python scripts to automate data processing in order to optimise workflows and reduce errors</li> <br>
+        <li>Simulation and Dashboard building: I used MONA software to model and simulate different asset management scenarios which helped build a relevant action plan and make informed strategic decisions</li>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="../assets/delete.PNG"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Task Manager API with Flask</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/xueyun0512/RestAPI_Task-Manager'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="../assets/pizza_sales_powerbi_dashboard.PNG"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Pizza sales report with PowerBI</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/xueyun0512/Pizza_Sales_PowerBI_report'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="../assets/temperature.PNG"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Temperature Analysis with Python and SQL</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/xueyun0512/Data_project_Temperature/blob/main/Python_analysis/Python_report_analysis.md'"
+          >
+            Github
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="../assets/mail.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:xueyunweng2@gmail.com">xueyunweng2@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="../assets/linkedin.jpg"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Olivia Xueyun WENG. All Rights Reserved.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
