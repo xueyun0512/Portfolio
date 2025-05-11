@@ -77,6 +77,7 @@ footer nav {
 .contact-info-upper-container,
 .btn-container {
     flex-wrap: wrap;
+    margin-top: auto;
 }
 .contact-info-container {
     margin: 0;
@@ -125,7 +126,8 @@ footer nav {
   }
   
   .about-details-container {
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
   
